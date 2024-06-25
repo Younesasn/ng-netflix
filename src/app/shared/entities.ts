@@ -14,3 +14,10 @@ export interface Movies {
     vote_average: number,
     vote_count: number,
 }
+
+export interface DataMovies {
+    page: number;
+    results: Movies[];
+    total_pages: number;
+    total_results: number;
+}

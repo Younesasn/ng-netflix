@@ -1,9 +1,4 @@
-import {
-  HttpEvent,
-  HttpHandlerFn,
-  HttpHeaders,
-  HttpRequest,
-} from '@angular/common/http';
+import { HttpEvent, HttpHandlerFn, HttpHeaders, HttpRequest } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { environment } from '../environments/environment.development';
 

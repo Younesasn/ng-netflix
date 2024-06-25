@@ -1,8 +1,7 @@
-import { Inject, Injectable, inject } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { environment } from '../../../environments/environment.development';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
-import { Movies } from '../entities';
+import { DataMovies, Movies } from '../entities';
 
 @Injectable({
   providedIn: 'root',
@@ -13,6 +12,6 @@ export class MoviesService {
   constructor(private http: HttpClient) {}
 
   getPopularMovies() {
-    return this.http.get<Movies[]>(this.baseUrl);
+    return this.http.get<DataMovies>(this.baseUrl);
   }
 }
