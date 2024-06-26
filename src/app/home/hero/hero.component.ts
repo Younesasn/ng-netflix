@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './hero.component.html',
-  styleUrl: './hero.component.css'
+  styleUrl: './hero.component.css',
 })
 export class HeroComponent implements OnInit {
   @Input() movie!: Movies;
@@ -15,6 +15,6 @@ export class HeroComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    // console.log(this.movie);
+    console.log(this.movie);
   }
 }

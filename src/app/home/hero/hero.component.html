@@ -5,7 +5,7 @@
       'url(https://image.tmdb.org/t/p/original' + movie.backdrop_path + ')'
     "
   >
-    <div class="max-w-screen-2xl py-6 m-auto h-[680px] flex items-end">
+    <div class="max-w-screen-2xl m-auto h-[680px] flex items-end">
       <div class="space-y-6">
         <div class="flex items-center space-x-3">
           <img src="../../../assets/N.svg" alt="" class="w-16 h-16" />
@@ -52,14 +52,14 @@
             class="text-2xl text-black bg-slate-50 px-10 py-3 rounded-md"
             >Lecture</a
           >
-          <a href="" class="bg-[#585250] px-10 py-3 rounded-md text-2xl"
+          <a href="" class="bg-[#585250]/50 px-10 py-3 rounded-md text-2xl"
             >Plus d'infos</a
           >
         </div>
       </div>
     </div>
     <div class="flex-1"></div>
-    <div class="flex justify-end items-center">
+    <div *ngIf="movie.adult" class="flex justify-end items-center">
       <p class="bg-[#585250]/50 w-32 py-3 px-4 border-l-4 text-xl">16+</p>
     </div>
   </div>
