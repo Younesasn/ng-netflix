@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit, inject } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { HeroComponent } from './hero/hero.component';
 import { DataMovies, Movies } from '../shared/entities';
 import { Subscription } from 'rxjs';
@@ -26,7 +26,6 @@ export class HomeComponent implements OnInit, OnDestroy {
       .getPopularMovies()
       .subscribe((data: DataMovies) => {
         this.movies = data;
-        console.log(this.movies);
       });
   }
 
