@@ -1,0 +1,24 @@
+.fade-enter {
+    @apply opacity-0;
+  }
+  
+  .fade-enter-active {
+    @apply transition-opacity duration-500;
+  }
+  
+  .fade-enter-to {
+    @apply opacity-100;
+  }
+  
+  .fade-leave {
+    @apply opacity-100;
+  }
+  
+  .fade-leave-active {
+    @apply transition-opacity duration-500;
+  }
+  
+  .fade-leave-to {
+    @apply opacity-0;
+  }
+  

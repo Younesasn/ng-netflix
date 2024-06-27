@@ -1,4 +1,4 @@
-<section *ngIf="movie">
+<section *ngIf="movie" [ngClass]="{'fade-enter-active fade-enter-to': fade, 'fade-leave-active fade-leave-to': !fade}">
   <div
     class="bg-no-repeat bg-cover bg-center h-[900px]"
     [style.background-image]="

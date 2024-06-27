@@ -1,0 +1,56 @@
+<button
+  type="button"
+  data-modal-target="default-modal"
+  data-modal-toggle="default-modal"
+  class="fixed bottom-10 right-10 bg-red-700 rounded-full h-14 w-14 flex items-center justify-center shadow-xl hover:scale-110 transition-all duration-300"
+  (click)="toogleModal()"
+>
+  <lucide-icon name="bot" class="size-[30px]"></lucide-icon>
+</button>
+
+<div
+  class="bg-red-700/90 w-[400px] h-[400px] fixed bottom-24 right-10 rounded-3xl" *ngIf="display"
+>
+  <div class="flex items-start gap-2.5 p-6">
+    <img
+      class="w-10 h-10 rounded-full"
+      src="../../assets/images/admin.png"
+      alt="Jese image"
+    />
+    <div
+      class="flex flex-col w-full max-w-[320px] leading-1.5 p-4 border-gray-200 bg-gray-100 rounded-e-xl rounded-es-xl dark:bg-gray-700"
+    >
+      <div class="flex items-center space-x-2 rtl:space-x-reverse">
+        <span class="text-sm font-semibold text-gray-900 dark:text-white"
+          >Bonnie Green</span
+        >
+        <span class="text-sm font-normal text-gray-500 dark:text-gray-400"
+          >11:46</span
+        >
+      </div>
+      <p class="text-sm font-normal py-2.5 text-gray-900 dark:text-white">
+        That's awesome. I think our users will really appreciate the
+        improvements.
+      </p>
+      <span class="text-sm font-normal text-gray-500 dark:text-gray-400"
+        >Delivered</span
+      >
+    </div>
+  </div>
+
+  <div class="flex items-start p-4 fixed bottom-28 right-10">
+    <form action="" class="space-x-10">
+      <input
+        type="text"
+        name="query"
+        id="query"
+        placeholder="Type your message"
+        class="bg-transparent rounded-lg placeholder:text-white"
+      />
+      <button
+        type="submit"
+        class="bg-black text-white px-4 py-2 rounded-full"
+      >Send</button>
+    </form>
+  </div>
+</div>
